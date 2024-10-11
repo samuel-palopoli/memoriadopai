@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Jogo da Memória</h1>
+        <h2>Escolha o nível de dificuldade:</h2>
+        <select id="difficulty">
+            <option value="facil">Fácil</option>
+            <option value="medio">Médio</option>
+            <option value="dificil">Difícil</option>
+        </select>
+        <br><br>
+        <button id="solo-mode">Jogar Sozinho</button>
+        <button id="duo-mode">Jogar em Dupla</button>
+    </div>
+
+    <div id="game-area" class="hidden">
+        <h2 id="mode-title">Modo Solo</h2>
+        <div id="game-info">
+            <span id="errors">Erros: 0</span>
+            <span id="timer">Tempo: 00:00</span>
+        </div>
+        <div id="game-board"></div>
+        <button id="restart-btn">Reiniciar Jogo</button>
+    </div>
+
+    <div id="victory-screen" class="hidden">
+        <h2>Parabéns, você venceu!</h2>
+        <p id="victory-message"></p>
+        <button id="menu-btn">Voltar ao Menu</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
